@@ -1,4 +1,6 @@
 /// <reference types="cypress"/> 
+ 
+
 describe('Test Suite for JpetStore', function() {
 
     it('First test case' ,  function () {
@@ -16,9 +18,13 @@ describe('Test Suite for JpetStore', function() {
          cy.get(':nth-child(6) > :nth-child(2) > input').type('Chitral, Kpk')
          cy.get(':nth-child(7) > :nth-child(2) > input').type('Rawalpindi')
          cy.get(':nth-child(8) > :nth-child(2) > input').type('Punjab')
-         cy.get(':nth-child(9) > :nth-child(2) > input').type('47800')
-         cy.get(':nth-child(10) > :nth-child(2) > input').type('Pakistan')
-         
+         cy.get(':nth-child(9) > :nth-child(2) > input').type('8050')
+         cy.get(':nth-child(10) > :nth-child(2) > input').type('Pak')
+         cy.get(':nth-child(6) > tbody > :nth-child(1) > :nth-child(1)').click()
+         cy.get(':nth-child(6) > tbody > :nth-child(1) > :nth-child(2)').click()
+         cy.get("cy.get(':nth-child(1) > :nth-child(2) > select')").select(2).should('have.value', 'english').click()
+
+
         })
         
 
