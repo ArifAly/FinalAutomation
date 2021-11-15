@@ -6,17 +6,11 @@ describe('Test Suite for Demo Websites', function()
       cy.visit('https://test.qatechhub.com/form-elements/')
       cy.get('#genesis-mobile-nav-primary').click()
       cy.get('#menu-item-129 > .sub-menu-toggle').click()
-      cy.get('#menu-item-126 > a > span').click()
-      cy.get('.ui-autocomplete-input').type("ja")
-      cy.wait(2000)
-      cy.get("div[tabindex='-1']").each(($el, index, $list)=> 
-      {
-        if($el.text()==="Java")
-        {
-          $el.click()
-        }
-      })
-       
+      cy.get('#menu-item-125 > a > span').click()
+      cy.get('#datepicker').click()
+      cy.get(':nth-child(1) > :nth-child(4) > .ui-state-default').click()
+        
+
       })
          
 

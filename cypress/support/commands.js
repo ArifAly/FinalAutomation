@@ -1,5 +1,7 @@
 // ***********************************************
 // This example commands.js shows you how to
+//import '@4tw/cypress-drag-drop'
+
 // create various custom commands and overwrite
 // existing commands.
 //
