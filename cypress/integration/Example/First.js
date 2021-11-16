@@ -23,7 +23,7 @@ describe('Test Suite for JpetStore', function() {
          cy.get(':nth-child(6) > tbody > :nth-child(1) > :nth-child(1)').click()
          cy.get(':nth-child(6) > tbody > :nth-child(1) > :nth-child(2)').click()
          cy.get("cy.get(':nth-child(1) > :nth-child(2) > select')").select(2).should('have.value', 'english').click()
-
+        
 
         })
         
