@@ -13,36 +13,30 @@ describe('Test Suite for Demo Websites', function()
         const formelements = new formElements();
          cy.visit('https://test.qatechhub.com/form-elements/')
           formelements.getfirstName().type(this.data.firstName)
-         cy.get('#wpforms-49-field_1-last').type(this.data.lastName)
-         cy.get('#wpforms-49-field_2').type(this.data.email) 
-         cy.get('#wpforms-49-field_4').type(this.data.phoneNumber)
-         cy.get('.choice-1 > .wpforms-field-label-inline').click()
-         cy.get('#wpforms-49-field_5').select('Cypress')
-         cy.get('#wpforms-submit-49').click()
-         cy.get('#wpforms-confirmation-49 > :nth-child(1)').should("have.text", "You have successfully filled in the form!")
+          formelements.getlastName().type(this.data.lastName)
+           formelements.getemail().type(this.data.email) 
+           formelements.getphoneNumber().type(this.data.phoneNumber)
+           formelements.getJustClick().click()
+         formelements.getSelect().select('Cypress')
+          formelements.getFormClick().click()
+          formelements.getText().should("have.text", "You have successfully filled in the form!")
          cy.get('#genesis-mobile-nav-primary').click()
          cy.get('#menu-item-123 > .sub-menu-toggle').click()
          cy.get('#menu-item-102 > a').click()
          //cy.get('.wp-block-file__button').click()
-         cy.get('#genesis-mobile-nav-primary').click()
-          cy.get('#menu-item-130 > .sub-menu-toggle').click()
-         cy.get('#menu-item-87 > a > span').click()
-         cy.get('.entry-title').should("have.text", "Alert Handling")
-         cy.get('#NormalAlert').click()
-         cy.get('#CustomAlert').click()
-         cy.get('#PromptAlert').click()
-         cy.get('#genesis-mobile-nav-primary').click()
-        cy.get('#menu-item-130 > .sub-menu-toggle').click()
-        cy.get('#menu-item-101 > a > span').click()
-        cy.get('.entry-title').should("have.text", "Window Handling")
-        cy.get('.wp-block-button__link').click()
-        
-          
-          
-
-         
-   
-
+          formelements.getPrimary().click()
+           formelements.getToggle().click()
+          formelements.getSpan().click()
+          formelements.getTittle().should("have.text", "Alert Handling")
+          formelements.getNormalAlert().click()
+          formelements.getCustomAlert().click()
+          formelements.getPromptAlert().click()
+          formelements.getMobile().click()
+          formelements.getSubMenu().click()
+          formelements.getNewSpan().click()
+         formelements.getEntryTittle().should("have.text", "Window Handling")
+         formelements.getLink().click()
+     
 
         })
         

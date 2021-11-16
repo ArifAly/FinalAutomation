@@ -1,15 +1,22 @@
 /// <reference types="cypress"/> 
+ import autocomplete from "../../support/pageobjects/autocomplete"
 describe('Test Suite for Demo Websites', function() 
 {
-    
+  before(() => {
+    cy.fixture('example').then(function(data) 
+    {
+       this.data =data
+    })
+  })
     it('First test case for Autom complete dynamic DDL' ,  function () {
+       const complete = new autocomplete();
       cy.visit('https://test.qatechhub.com/form-elements/')
-      cy.get('#genesis-mobile-nav-primary').click()
-      cy.get('#menu-item-129 > .sub-menu-toggle').click()
-      cy.get('#menu-item-126 > a > span').click()
-      cy.get('.ui-autocomplete-input').type("ja")
+       complete.getPrimaryNav().click()
+       complete.getsubMenu().click()
+       complete.getMenuItem().click()
+       complete.getInput().type(this.data.course)
       cy.wait(2000)
-      cy.get("div[tabindex='-1']").each(($el, index, $list)=> 
+       complete.gerTabIndex().each(($el, index, $list)=> 
       {
         if($el.text()==="Java")
         {

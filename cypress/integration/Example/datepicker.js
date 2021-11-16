@@ -1,17 +1,17 @@
 /// <reference types="cypress"/> 
+
+import datepicker from "../../support/pageobjects/datepicker"
+
 describe('Test Suite for Demo Websites', function() 
 {
     
     it('First test case for Autom complete dynamic DDL' ,  function () {
+      const date = new datepicker();
       cy.visit('https://test.qatechhub.com/form-elements/')
-      cy.get('#genesis-mobile-nav-primary').click()
-      cy.get('#menu-item-129 > .sub-menu-toggle').click()
-      cy.get('#menu-item-125 > a > span').click()
-      cy.get('#datepicker').click()
-      cy.get(':nth-child(1) > :nth-child(4) > .ui-state-default').click()
-        
-
+       date.getmobile().click()
+      date.getToggle().click()
+       date.getItem().click()
+       date.getdateepicker().click()
+      date.getChild().click()
       })
-         
-
 })
