@@ -1,5 +1,5 @@
 /// <reference types="cypress"/> 
- 
+ import formElements from "../../support/pageobjects/formElements"
 
 describe('Test Suite for Demo Websites', function() 
 {
@@ -10,8 +10,9 @@ describe('Test Suite for Demo Websites', function()
         })
       })
     it('First test case for Form Elements' ,  function () {
+        const formelements = new formElements();
          cy.visit('https://test.qatechhub.com/form-elements/')
-         cy.get('#wpforms-49-field_1').type(this.data.firstName)
+          formelements.getfirstName().type(this.data.firstName)
          cy.get('#wpforms-49-field_1-last').type(this.data.lastName)
          cy.get('#wpforms-49-field_2').type(this.data.email) 
          cy.get('#wpforms-49-field_4').type(this.data.phoneNumber)
@@ -31,10 +32,11 @@ describe('Test Suite for Demo Websites', function()
          cy.get('#CustomAlert').click()
          cy.get('#PromptAlert').click()
          cy.get('#genesis-mobile-nav-primary').click()
-          cy.get('#menu-item-130 > .sub-menu-toggle').click()
+        cy.get('#menu-item-130 > .sub-menu-toggle').click()
         cy.get('#menu-item-101 > a > span').click()
         cy.get('.entry-title').should("have.text", "Window Handling")
         cy.get('.wp-block-button__link').click()
+        
           
           
 
