@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-18T08:06:02.154Z",
+    "end": "2021-11-18T08:06:15.596Z",
+    "duration": 13442,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8308ea3f-f0b0-4a06-93a4-b0a4d87e04da",
+      "title": "",
+      "fullFile": "cypress/integration/Example/widgets.js",
+      "file": "cypress/integration/Example/widgets.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "28b1b246-d7d9-4264-bfed-935ed2c953ba",
+          "title": "Test Suite for Demo Websites",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "First test case for Form Elements",
+              "fullTitle": "Test Suite for Demo Websites First test case for Form Elements",
+              "timedOut": null,
+              "duration": 9563,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://test.qatechhub.com/form-elements/');\ncy.get('#genesis-mobile-nav-primary').click();\ncy.get('#menu-item-129 > .sub-menu-toggle').click();\ncy.get('#menu-item-127 > a > span').click();\ncy.get('#ui-id-1').click(); // cy.get('#ui-id-2').should(\"have.text\", \"Hello, This is the first accordion! Welcome to Test QA Tech Hub\")\ncy.get('#ui-id-3').click();\ncy.get('#ui-id-5').click();\ncy.get('#ui-id-7').click(); //cy.get('#ui-id-8 > p').should(\"have.text\", \"Hello, This is the forth accordion! Welcome to Test QA Tech Hub\")",
+              "err": {},
+              "uuid": "eeaf5c75-5041-4253-a5b9-96b671087abf",
+              "parentUUID": "28b1b246-d7d9-4264-bfed-935ed2c953ba",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eeaf5c75-5041-4253-a5b9-96b671087abf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9563,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}

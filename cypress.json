@@ -1,3 +1,7 @@
 {
-  "projectId": "vygkfs"
+  "projectId": "vygkfs",
+ 
+  "reporter": "mochawesome"
+          
+   
 }
