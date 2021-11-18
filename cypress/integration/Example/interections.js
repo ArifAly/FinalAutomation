@@ -1,17 +1,14 @@
- 
+ import interaction from "../../support/pageobjects/interaction"
 describe('Test Suite for Demo Websites', function() 
 {
     
     it('First test case for Autom complete dynamic DDL' ,  function () {
+      const inte = new interaction();
       cy.visit('https://test.qatechhub.com/form-elements/')
-      cy.get('#genesis-mobile-nav-primary').click()
-      cy.get('#menu-item-131 > .sub-menu-toggle').click()
-      cy.get('#menu-item-124 > a > span').click()
-      cy.get('.entry-title').should("have.text", "Selectable")
-      cy.get('#selectable > :nth-child(3)').click()
-        
-
+      inte.getprimary().click()
+       inte.getToggle().click()
+       inte.getSpan().click()
+       inte.getTittle().should("have.text", "Selectable")
+      inte.getChild().click()
       })
-         
-
 })
