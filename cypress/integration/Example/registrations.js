@@ -6,11 +6,11 @@ describe('Test Suite for JpetStore', function() {
     it('First test case' ,  function () {
         const reg = new registration();
          cy.visit('https://petstore.octoperf.com/actions/Account.action?signonForm=')
-         reg.getCatalog().click()
+          reg.getCatalog().click()
           reg.getForm().click()
           reg.getUserName().type('10500')
-         reg.getPassword().type('Nothing123')
-          reg.getConfirmPass().ype('Nothing123')
+          reg.getPassword().type('Nothing123')
+          reg.getConfirmPass().type('Nothing123')
           reg.getFirstName().type('Kashif')
           reg.getLastName().type('Ali')
           reg.getEmail().type('kashif4545@gmail.com')
@@ -20,9 +20,7 @@ describe('Test Suite for JpetStore', function() {
           reg.getCity().type('Rawalpindi')
           reg.getprovince().type('Punjab')
           reg.getCode2().type('8050')
-          reg.pak().type('Pak')
+          reg.getCountry().type('Pak')
           
         })
-        
-
 })
