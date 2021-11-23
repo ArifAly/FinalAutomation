@@ -12,7 +12,7 @@ describe('Test Suite for Demo Websites', function()
           const wid = new widget();
          cy.visit('https://test.qatechhub.com/form-elements/')
           wid.getPrimary().click()
-         wid.getToggle().click()
+          wid.getToggle().click()
           wid.getSpan().click()
           wid.getClick1().click()
         // cy.get('#ui-id-2').should("have.text", "Hello, This is the first accordion! Welcome to Test QA Tech Hub")
