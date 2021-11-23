@@ -19,6 +19,8 @@ describe('Test Suite for Demo Websites', function()
          wid.getClick2().click()
          wid.getClick3().click()
          wid.getClick4().click()
+         
+         
         
         //cy.get('#ui-id-8 > p').should("have.text", "Hello, This is the forth accordion! Welcome to Test QA Tech Hub"
    
