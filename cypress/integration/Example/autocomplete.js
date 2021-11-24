@@ -23,8 +23,5 @@ describe('Test Suite for Demo Websites', function()
           $el.click()
         }
       })
-       
       })
-         
-
 })
