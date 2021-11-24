@@ -60,6 +60,7 @@ class registration {
   {
    return cy.get(':nth-child(10) > :nth-child(2) > input')
   }
+  
  
 }
 export default registration
