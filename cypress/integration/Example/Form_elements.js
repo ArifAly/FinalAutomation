@@ -36,7 +36,7 @@ describe('Test Suite for Demo Websites', function()
           formelements.getNewSpan().click()
          formelements.getEntryTittle().should("have.text", "Window Handling")
          formelements.getLink().click()
-     
+         
 
         })
         
