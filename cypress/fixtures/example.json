@@ -3,6 +3,18 @@
    "lastName": "Ali",
    "email": "afaq@gmail.com",
    "phoneNumber": "03361852031",
-   "course": "ja"
+   "course": "ja",
+
+   "FirstName" : "Arif",
+   "LastName" :  "Ali",
+   "Address": "Sadiqabad RWP",
+   "City": "RWP",
+   "State": "Pakistan",
+   "ZipCode": "74000",
+   "phonenumber": "03183602525",
+   "SSN": "A1050",
+   "Username": "arifalidanish",
+   "Password": "danishali",
+   "Confirm": "danishali"
   
 }
