@@ -29,6 +29,7 @@ describe('Test suites for Bank System', function()
         cy.get("tr:nth-child(12) td:nth-child(2)") .type(this.data.Confirm)
        cy.get('[colspan="2"] > .button').click()
        cy.get('.title').should("have.text", "Signing up is easy!")
-     })
+       
+      })
 
 })
