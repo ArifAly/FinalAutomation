@@ -9,7 +9,7 @@ describe('Test Suite for Demo Websites', function()
       cy.get('#menu-item-125 > a > span').click()
       cy.get('#datepicker').click()
       cy.get(':nth-child(1) > :nth-child(4) > .ui-state-default').click()
-        
+   
 
       })
          
