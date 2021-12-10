@@ -37,14 +37,7 @@ describe('Test Suite for Demo Websites', function()
         cy.get('.entry-title').should("have.text", "Window Handling")
         cy.get('.wp-block-button__link').click()
         
-          
-          
-
-         
-   
-
-
-        })
+      })
         
 
 })
